@@ -7,8 +7,8 @@
 
 ### fine tuning 모델 만들기
 1. git clone https://github.com/ggerganov/llama.cpp.git
-2. python merge_model.py
-3. python .\llama.cpp\convert_hf_to_gguf.py .\merged_model --outfile [name.gguf] --outtype q8_0
+2. `python merge_model.py`
+3. `python .\llama.cpp\convert_hf_to_gguf.py .\merged_model --outfile [name.gguf] --outtype q8_0`
 4. ollama create [Name] -f Modelfile
 5. ollama run [Name]
 
