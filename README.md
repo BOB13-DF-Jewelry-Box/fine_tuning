@@ -6,7 +6,7 @@
 - learning rate = 2e-6
 
 ### Adapter + basemodel => gguf
-**adapter 폴더를 fine_tuning 폴더 내부에 넣고 실행(CUDA 필요)**
+**adapter 폴더를 fine_tuning 폴더 내부에 넣고 실행 (CUDA 필요)**
 ```python
 git clone https://github.com/ggerganov/llama.cpp.git
 pip install -r ./llama.cpp/requirements.txt
