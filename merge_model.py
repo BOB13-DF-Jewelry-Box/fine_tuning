@@ -15,7 +15,7 @@ def save_merged_model_as_gguf(base_model_path, lora_adapter_path, output_path, c
 
 if __name__ == "__main__":
     model_name = 'Saxo/Linkbricks-Horizon-AI-Korean-Advanced-8B'
-    lora_adapter_path = './adapter'   # adapter 경로
+    lora_adapter_path = 'adapter'   # adapter 경로
     output_path = './merged_model'
     cache_dir = './cache'
     save_merged_model_as_gguf(model_name, lora_adapter_path, output_path, cache_dir=cache_dir)
