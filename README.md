@@ -9,6 +9,7 @@
 **adapter 폴더를 fine_tuning 폴더 내부에 넣고 실행(CUDA 필요)**
 ```python
 git clone https://github.com/ggerganov/llama.cpp.git
+pip install -r ./llama.cpp/requirements.txt
 python merge_model.py
 python .\llama.cpp\convert_hf_to_gguf.py .\merged_model --outfile [name.gguf] --outtype q8_0
 ```
