@@ -13,8 +13,10 @@ python .\llama.cpp\convert_hf_to_gguf.py .\merged_model --outfile [name.gguf] --
 ```
 
 ### Ollama (gguf, Modelfile 필요)
- ollama create [Name] -f Modelfile
-6. ollama run [Name]
+```
+ollama create [Name] -f Modelfile
+ollama run [Name]
+```
 
 ### Modelfile 만들기
 - https://github.com/ollama/ollama/blob/main/docs/modelfile.md
