@@ -7,10 +7,12 @@ adapter_path = "./adapter"
 output_path = "./merged_model"
 model_name = 'Saxo/Linkbricks-Horizon-AI-Korean-Advanced-8B'
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
     cache_dir=cache_dir
-    )
+    ).to(device)
 
 tokenizer = AutoTokenizer.from_pretrained(
     model_name,
