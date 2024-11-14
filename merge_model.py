@@ -19,7 +19,7 @@ tokenizer = AutoTokenizer.from_pretrained(
     cache_dir=cache_dir
     )
 
-model = PeftModel.from_pretrained(model, adapter_path)
+model = PeftModel.from_pretrained(model, adapter_path).to(device)
 model = model.merge_and_unload()
 
 model.save_pretrained(output_path)
