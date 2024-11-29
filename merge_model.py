@@ -9,7 +9,7 @@ model = AutoModelForCausalLM.from_pretrained(
     base_model_name_or_path,
     # load_in_4bit=True,    -> kernel died
     torch_dtype=torch.bfloat16,
-	cache_dir=cache_dir,
+    cache_dir=cache_dir,
     device_map="cuda"
 )
 
